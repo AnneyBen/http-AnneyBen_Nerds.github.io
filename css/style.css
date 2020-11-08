@@ -1,0 +1,193 @@
+
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+/* ==================================================================================================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: medium;
+    background-color: #fb565a;
+    text-transform: uppercase;
+    padding: 16px 55px 15px 55px;
+    border-radius: 3px;
+}
+
+/* HEADER HEADER HEADER */
+
+.header-navigation-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-navigation-list a,
+.header-navigation-list + .cart{
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: medium;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: medium;
+}
+
+.slider h1{
+    width: 520px;
+}
+
+.slider p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;  
+    width: 408px;
+}
+
+.slider .btn{
+    padding-left: 55px;
+    padding-right: 54px;
+}
+
+
+/* HEADER HEADER HEADER */
+
+/* ADVANTAGES ADVANTAGES ADVANTAGES */
+
+.section-advantages h3{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-advantages p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    width: 245px;
+}
+
+.section-advantages .btn{
+    padding-left: 40px;
+    padding-right: 41px;
+}
+
+.section-advantages .advantages-button-green{
+    background-color: #00ca74;
+}
+
+.section-advantages .advantages-button-yellow{
+    background-color: #efc84a;
+}
+
+/* ADVANTAGES ADVANTAGES ADVANTAGES */
+
+/* STUDIO STUDIO STUDIO STUDIO STUDIO */
+
+.section-studio h3{
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: medium;
+}
+
+.section-studio p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.section-studio h4{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-studio ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.studio-about li{
+    line-height: 48px;
+}
+
+.statistics .statistics-percents{
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.statistics sup{
+    line-height: 0;
+    font-size: 25px;
+}
+
+.statistics .statistics-value{
+    line-height: 18px;
+}
+
+/* STUDIO STUDIO STUDIO STUDIO STUDIO */
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+.article-contacts h4{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.article-contacts p{
+    line-height: 18px;
+    color: #666666;
+}
+
+.article-contacts .btn{
+    padding-left: 44px;
+    padding-right: 45px;
+}
+
+.footer-slogan h2{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.footer-slogan p{
+    line-height: 22px;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+
+
+/* CATALOG CATALOG CATALOG CATALOG CATALOG */
+
+
+
+/* HEADER HEADER HEADER */
+
+
+/* HEADER HEADER HEADER */
