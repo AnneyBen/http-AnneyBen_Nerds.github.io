@@ -179,6 +179,11 @@ h1{
     line-height: 22px;
 }
 
+.network-container a{
+    color: #000000;
+    text-decoration: none;
+}
+
 /* FOOTER FOOTER FOOTER FOOTER FOOTER */
 
 
@@ -191,3 +196,132 @@ h1{
 
 
 /* HEADER HEADER HEADER */
+
+/* FILTER FILTER FILTER */
+
+form legend{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form .legend-cost{
+    letter-spacing: 0.03em;
+}
+
+.container-range-value label{
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.container-range-value input{
+    font: inherit;  
+}
+
+.container-range-value input::placeholder{
+    font: inherit;
+    color: #283136;
+}
+
+form .btn{
+    border: none;        
+    background-color: #eeeeee;
+    color: #000000;
+    padding: 17px 88px 15px 89px;
+    font: inherit;
+    font-weight: medium;
+}
+    
+
+/* FILTER FILTER FILTER */
+
+/* SECTION-CATALOG SECTION-CATALOG SECTION-CATALOG */
+
+.container-sorting h3{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container-sorting .cost-type-name{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cost-type-name a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.down-up a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.1px;
+}
+
+.container-templates{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container-templates a:not(.btn){
+    color: #000000;
+    text-decoration: none;
+}
+
+.container-hover h3{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container-hover p{
+    width: 230px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #666666;
+}
+
+.container-hover .btn{
+    padding: 16px 61px 15px 61px;
+}
+
+.container-pagination a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 48px;
+    box-sizing: border-box;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: solid 3px #eeeeee;
+    background-color: #eeeeee;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.container-pagination .pagination-here{
+    border: solid 3px #dbdbdb;
+    background-color: transparent;
+}
+
+.container-pagination .pagination-big{
+    width: 260px;
+}
+
+/* SECTION-CATALOG SECTION-CATALOG SECTION-CATALOG */
