@@ -45,7 +45,60 @@ body{
     text-decoration: none;
     font-weight: medium;
     text-transform: uppercase;
+    display: block;
 }
+
+.header-navigation-list a:hover,
+.header-navigation-list + .cart:hover{
+    color: #fb565a;
+}
+
+.header-navigation-list a:active,
+.header-navigation-list + .cart:active{
+    opacity: 30%;
+    color: #000000;
+}
+
+.catalog-page .page-here{
+    position: relative;
+}
+
+.catalog-page .page-here::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #fb565a;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+}
+
+.catalog-page header-logo:hover{
+    opacity: 80%;
+}
+
+.catalog-page .header-logo:active{
+    opacity: 30%;
+}
+
+.header-navigation .cart{
+    position: relative;
+    padding-left: 40px;
+}
+
+.header-navigation .cart::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/cart-icon.svg);
+    background-size: 15px;
+    left: 0px;
+    top: 7px;
+    filter: contrast(0) grayscale(0) opacity(0.6);
+}
+
+
 
 h1{
     font-size: 55px;
@@ -67,6 +120,15 @@ h1{
 .slider .btn{
     padding-left: 55px;
     padding-right: 54px;
+}
+
+.slider .btn:hover{
+    background-color: #e74246;
+}
+
+.slider .btn:active{
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -91,14 +153,53 @@ h1{
 .section-advantages .btn{
     padding-left: 40px;
     padding-right: 41px;
+    box-sizing: border-box;
+    padding-top: 13px;
+    border-top: solid 3px #fb565a;
+    
+}
+
+.section-advantages .advantages-button-red:hover{
+    background-color: #e74246;
+    border-top-color: #e74246;
+}
+
+.section-advantages .advantages-button-red:active{
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
+    border-top: solid 3px #c13135;
 }
 
 .section-advantages .advantages-button-green{
     background-color: #00ca74;
+    border-top-color: #00ca74;
+}
+
+.section-advantages .advantages-button-green:hover{
+    background-color: #00bc6c;
+    border-top-color: #00bc6c;
+}
+
+.section-advantages .advantages-button-green:active{
+    background-color: #00aa62;
+    border-top-color: #009958;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .section-advantages .advantages-button-yellow{
     background-color: #efc84a;
+    border-top-color: #efc84a;
+}
+
+.section-advantages .advantages-button-yellow:hover{
+    background-color: #eab534;
+    border-top-color: #eab534;
+}
+
+.section-advantages .advantages-button-yellow:active{
+    background-color: #e5a722;
+    border-top-color: #ce961f;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 /* ADVANTAGES ADVANTAGES ADVANTAGES */
@@ -150,6 +251,39 @@ h1{
 }
 
 /* STUDIO STUDIO STUDIO STUDIO STUDIO */
+
+/* SECTION-PROJECTS SECTION-PROJECTS SECTION-PROJECTS */
+
+.section-projects{
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.section-projects-wrapper{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 1087px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-projects li{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.section-projects img{
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+/* SECTION-PROJECTS SECTION-PROJECTS SECTION-PROJECTS */
+
+
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER */
 
@@ -226,6 +360,66 @@ form .legend-cost{
     color: #283136;
 }
 
+.container-layout input{
+    display: none;
+}
+
+.container-layout label{
+    position: relative;
+    padding-left: 36px;
+}
+
+.container-layout label::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/radio-off.svg);
+    left: 1px;
+    top: -3px;
+    filter: opacity(40%);
+}
+
+.container-layout input:checked + label::before{
+    background-image: url(../img/radio-on.svg);
+}
+
+.container-layout label:hover::before{
+    filter: opacity(1);
+    transition: 0.2s;
+}
+
+.container-features input{
+    display: none;
+}
+
+.container-features label{
+    position: relative;
+    padding-left: 36px;
+}
+
+.container-features label::before{
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.svg);
+    left: 1px;
+    top: -3px;
+    filter: opacity(40%);
+}
+
+.container-features input:checked + label::before{
+    width: 27px;
+    height: 23px;
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.container-features label:hover::before{
+    filter: opacity(1);
+    transition: 0.2s;
+}
+
 form .btn{
     border: none;        
     background-color: #eeeeee;
@@ -264,7 +458,29 @@ form .btn{
 .down-up a{
     color: #000000;
     text-decoration: none;
+    display: block;
     font-size: 0.1px;
+    width: 11px;
+    height: 10px;
+}
+
+.down-up a:first-child{
+    background-image: url(../img/icon-down-dir.png);
+    background-size: 11px 10px;
+}
+
+.down-up a:last-child{
+    background-image: url(../img/icon-up-dir.svg);
+    background-size: 11px 10px;
+    filter: contrast(0) opacity(0.2);
+}
+
+.down-up a:hover{
+    filter: contrast(0) opacity(1);
+}
+
+.down-up a:active{
+    filter: contrast(1) opacity(1);
 }
 
 .container-templates{
