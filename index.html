@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nerds</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="index-page">
     <header>
@@ -25,74 +26,81 @@
 
         <!-- SLIDER -->
         <section class="slider-section">
-            <div class="switch-slider-container visually-hidden">
-                <input type="radio" class="switch-slider-1" id="switch-slider-1" name="switch">
+            
+
+            <div class="slider-wrapper">
+                <input type="radio" class="switch-slider-1" id="switch-slider-1" name="switch" checked>
                 <input type="radio" class="switch-slider-2" id="switch-slider-2" name="switch">
                 <input type="radio" class="switch-slider-3" id="switch-slider-3" name="switch">
+                <article class="slider slider-1">
+                    <h1>Долго, дорого, скрупулезно.</h1>
+                    <p>
+                        Математически выверенный дизайн 
+                        для вашего сайта или мобильного приложения.
+                    </p>
+                    <a href="#" class="btn slider-button">Узнать больше</a>
+                </article>
+    
+                <article class="slider slider-2">
+                    <h1>Любим математику как никто другой</h1>
+                    <p>
+                        Никакого креатива, только математические формулы 
+                        для расчета идеальных пропорций.
+                    </p>
+                    <a href="#" class="btn slider-button">Узнать больше</a>
+                </article>
+    
+                <article class="slider slider-3">
+                    <h1>Только ночь, только хардкор</h1>
+                    <p>
+                        Работать днем, как все? Мы против этого.
+                        Ближе к полуночи работа только начинается.
+                    </p>
+                    <a href="#" class="btn slider-button">Узнать больше</a>
+                </article>
+
+                <div class="bottom-slider-container">
+                    <label class="switch-1" for="switch-slider-1">1</label>
+                    <label class="switch-2" for="switch-slider-2">2</label>
+                    <label class="switch-3" for="switch-slider-3">3</label>
+                </div>
             </div>
             
-            <article class="slider slider-1">
-                <h1>Долго, дорого, скрупулезно.</h1>
-                <p>
-                    Математически выверенный дизайн 
-                    для вашего сайта или мобильного приложения.
-                </p>
-                <a href="#" class="btn slider-button">Узнать больше</a>
-            </article>
 
-            <article class="slider slider-2">
-                <h1>Любим математику как никто другой</h1>
-                <p>
-                    Никакого креатива, только математические формулы 
-                    для расчета идеальных пропорций.
-                </p>
-                <a href="#" class="btn slider-button">Узнать больше</a>
-            </article>
-
-            <article class="slider slider-3">
-                <h1>Только ночь, только хардкор</h1>
-                <p>
-                    Работать днем, как все? Мы против этого.
-                    Ближе к полуночи работа только начинается.
-                </p>
-                <a href="#" class="btn slider-button">Узнать больше</a>
-            </article>
-
-            <div class="bottom-slider-container">
-                <label for="switch-slider-1">1</label>
-                <label for="switch-slider-2">2</label>
-                <label for="switch-slider-3">3</label>
-            </div>
+            
         </section>
         <!-- SLIDER -->
     </header>
 
     <main>
         <section class="section-advantages">
-            <div class="advantages advantages-web">
-                <div class="advantages-image">
-                    <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+            <div class="advantages-wrapper">
+                <div class="advantages advantages-web">
+                    <div class="advantages-image">
+                        <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+                    </div>
+                    <h3>Веб-сайты</h3>
+                    <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                    <a href="#" class="btn advantages-button-red">Заказать</a>
                 </div>
-                <h3>Веб-сайты</h3>
-                <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                <a href="#" class="btn advantages-button-red">Заказать</a>
-            </div>
-            <div class="advantages advantages-app">
-                <div class="advantages-image">
-                    <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+                <div class="advantages advantages-app">
+                    <div class="advantages-image">
+                        <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+                    </div>
+                    <h3>Приложения</h3>
+                    <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                    <a href="#" class="btn advantages-button-green">Заказать</a>
                 </div>
-                <h3>Приложения</h3>
-                <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                <a href="#" class="btn advantages-button-green">Заказать</a>
-            </div>
-            <div class="advantages advantages-presentation">
-                <div class="advantages-image">
-                    <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+                <div class="advantages advantages-presentation">
+                    <div class="advantages-image">
+                        <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+                    </div>
+                    <h3>Презентации</h3>
+                    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                    <a href="#" class="btn advantages-button-yellow">Заказать</a>
                 </div>
-                <h3>Презентации</h3>
-                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                <a href="#" class="btn advantages-button-yellow">Заказать</a>
             </div>
+            
         </section>
 
         <section class="section-studio">
