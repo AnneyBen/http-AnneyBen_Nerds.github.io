@@ -26,69 +26,68 @@
 
     <main>
         <section class="wrapper">
-            <section class="section-wrapper">
-                <form action="get">
-                    <fieldset class="fieldset-cost">
-                        <legend class="legend-cost">Стоимость:</legend>
-                        <div class="container-cost">
-                            <div class="container-range">
-                                <input type="range" min="0" max="15000" value="10000">
-                            </div>
-                            <div class="container-range-value">
-                                <label for="from">
-                                    От <input type="number" id="from" placeholder="0">
-                                </label>
-                                <label for="to">
-                                    До <input type="number" id="to" placeholder="15000">
-                                </label>
-                            </div>
+            <form action="get" class="main-form">
+                <fieldset class="fieldset-cost">
+                    <legend class="legend-cost">Стоимость:</legend>
+                    <div class="container-cost">
+                        <div class="container-range">
+                            <input type="range" min="0" max="15000" value="10000">
                         </div>
-                    </fieldset>
-                    <fieldset class="fieldset-layout">
-                        <legend>Сетка:</legend>
-                        <div class="container-layout">
-                            <div class="layout-adaptive">
-                                <input type="radio" name="layout-radio" id="layout-adaptive" checked>
-                                <label for="layout-adaptive">Адаптивная</label>
-                            </div>
-                            <div class="layout-fixed">
-                                <input type="radio" name="layout-radio" id="layout-fixed">
-                                <label for="layout-fixed">Фиксированная</label>
-                            </div>
-                            <div class="layout-rubber">
-                                <input type="radio" name="layout-radio" id="layout-rubber">
-                                <label for="layout-rubber">Резиновая</label>
-                            </div>
+                        <div class="container-range-value">
+                            <label for="from">
+                                От <input type="number" id="from" placeholder="0">
+                            </label>
+                            <label for="to">
+                                До <input type="number" id="to" placeholder="15 000">
+                            </label>
                         </div>
-                    </fieldset>
-                    <fieldset class="fieldset-features">
-                        <legend>Особенности:</legend>
-                        <div class="container-features">
-                            <div class="container-features-item">
-                                <input type="checkbox" id="checkbox-slider" checked>
-                                <label for="checkbox-slider">Слайдер</label>
-                            </div>
-                            <div class="container-features-item">
-                                <input type="checkbox" id="checkbox-advantages">
-                                <label for="checkbox-advantages">Блок преимуществ</label>
-                            </div>
-                            <div class="container-features-item">
-                                <input type="checkbox" id="checkbox-news" checked>
-                                <label for="checkbox-news">Новости</label>
-                            </div>
-                            <div class="container-features-item">
-                                <input type="checkbox" id="checkbox-gallery">
-                                <label for="checkbox-gallery">Галерея</label>
-                            </div>
-                            <div class="container-features-item">
-                                <input type="checkbox" id="checkbox-cart">
-                                <label for="checkbox-cart">Корзина</label>
-                            </div>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-layout">
+                    <legend class="legend-layout">Сетка:</legend>
+                    <div class="container-layout">
+                        <div class="layout-adaptive">
+                            <input type="radio" name="layout-radio" id="layout-adaptive" checked>
+                            <label for="layout-adaptive">Адаптивная</label>
                         </div>
-                    </fieldset>
-                    <button type="submit" class="btn form-button">Показать</button>
-                </form>
-            </section>
+                        <div class="layout-fixed">
+                            <input type="radio" name="layout-radio" id="layout-fixed">
+                            <label for="layout-fixed">Фиксированная</label>
+                        </div>
+                        <div class="layout-rubber">
+                            <input type="radio" name="layout-radio" id="layout-rubber">
+                            <label for="layout-rubber">Резиновая</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-features">
+                    <legend>Особенности:</legend>
+                    <div class="container-features">
+                        <div class="container-features-item">
+                            <input type="checkbox" id="checkbox-slider" checked>
+                            <label for="checkbox-slider">Слайдер</label>
+                        </div>
+                        <div class="container-features-item">
+                            <input type="checkbox" id="checkbox-advantages">
+                            <label for="checkbox-advantages">Блок преимуществ</label>
+                        </div>
+                        <div class="container-features-item">
+                            <input type="checkbox" id="checkbox-news" checked>
+                            <label for="checkbox-news">Новости</label>
+                        </div>
+                        <div class="container-features-item">
+                            <input type="checkbox" id="checkbox-gallery">
+                            <label for="checkbox-gallery">Галерея</label>
+                        </div>
+                        <div class="container-features-item">
+                            <input type="checkbox" id="checkbox-cart">
+                            <label for="checkbox-cart">Корзина</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn form-button">Показать</button>
+            </form>
+                
 
             <section class="section-catalog">
                 <div class="container-sorting">
@@ -106,7 +105,7 @@
 
                 <ul class="container-templates">
                     <li>
-                        <a href="#">
+                        <a class="container-templates-item" href="#">
                             <div class="curtain">
                                 <div class="circles"></div>
                             </div>
@@ -121,7 +120,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="container-templates-item" href="#">
                             <div class="curtain">
                                 <div class="circles"></div>
                             </div>
@@ -136,7 +135,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="container-templates-item" href="#">
                             <div class="curtain">
                                 <div class="circles"></div>
                             </div>
@@ -151,7 +150,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="container-templates-item" href="#">
                             <div class="curtain">
                                 <div class="circles"></div>
                             </div>
@@ -166,7 +165,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="container-templates-item" href="#">
                             <div class="curtain">
                                 <div class="circles"></div>
                             </div>
@@ -181,7 +180,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="container-templates-item" href="#">
                             <div class="curtain">
                                 <div class="circles"></div>
                             </div>
