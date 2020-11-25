@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: 
+*/
 
 /* HEADER HEADER HEADER HEADER */
 
@@ -158,6 +164,7 @@ section.wrapper{
     padding: 0;
     margin: 0;
     width: 760px;
+    margin-bottom: 60px;
 }
 
 .container-sorting{
@@ -199,19 +206,47 @@ section.wrapper{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 27px;
 }
 
 .container-templates .container-templates-item{
     display: block;
     position: relative;
     padding-top: 39px;
+    margin-bottom: 30px;
 }
 
 .container-templates-item .container-hover{
     position: absolute;
-    top: 0;
+    opacity: 0;
     left: 0;
+    bottom: 0;
     z-index: 10;
+    width: 100%;
+    background-color: #eeeeee;
+    text-align: center;
+    padding-bottom: 47px;
+    padding-top: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.container-hover h3{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.container-hover p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.container-templates-item:hover .container-hover{
+    opacity: 1;
 }
 
 .container-templates .curtain{
@@ -222,6 +257,7 @@ section.wrapper{
     top: 0;
     left: 0;
     border-radius: 3px;
+    transition: background-color 0.3s;
 }
 
 .container-templates .container-templates-item:hover .curtain{
@@ -253,14 +289,19 @@ section.wrapper{
     top: 0;
     left: 0;
     background-color: #e9e9e9;
+    transition: background-color 0.3s;
 }
 
 .container-templates .container-templates-item:hover .templates-image::before{
     background-color: #4d4d4d;
 }
 
+.container-pagination{
+    width: 443px;
+    display: flex;
+    justify-content: space-between;
 
-
+}
 
 /* SECTION-CATALOG SECTION-CATALOG SECTION-CATALOG */
 
